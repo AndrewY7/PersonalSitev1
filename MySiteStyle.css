@@ -1,0 +1,178 @@
+body {
+    background-color: rgb(226, 226, 226);
+    color: #000000;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+
+    backface-visibility: Arial, sans-serif;
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header{
+    background:rgb(226, 226, 226);
+    color:#000000;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom: 4px solid #000000;
+}
+
+header a{
+    color:#000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+}
+
+header #name{
+    float:left;
+}
+
+header #name h1{
+    margin:0;
+}
+
+header nav{
+    float:right;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+header a:hover{
+    color:#ffffff;
+    font-weight: bold;
+}
+
+header nav ul li a#resume-link {
+    border: 5px solid #000000;
+    border-radius: 6px; /* adjust to create rounded effect to border */
+    padding: 5px;
+}
+
+/* BC Title 
+#BC{
+    min-height:500px;
+    background:url('../images/Gasson3.jpg') no-repeat -500px;
+    text-align:center;
+    color:#ffffff;
+}
+*/
+
+.BCHeader::after {
+    content: '';
+    height: 40vh;
+    width: 100%;
+    background-image: url(../images/Gasson3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(5px);
+    -webkit-filter: blur(10px) brightness(40%);
+    transition: all 2000ms;
+}
+
+.BCHeader:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.BCHeader .title {
+    position:absolute;
+    z-index:1;
+    top: 20%;
+    left: 50%;
+    margin-top:100px;
+    margin-left:-145px;
+    width:300px;
+    height:350px;
+    text-align:center;
+    transition: all 10000ms;
+}
+
+#BC{
+    font-size:35px;
+    margin-bottom:150px;
+    color:#ffffff;
+}
+
+/* About  */
+.about-title{
+    display:flex;
+    float:left;
+    width:20%;
+    padding:10px;
+}
+
+.about{
+    float:left;
+    width:50%;
+  /*  border:1px solid #ccc; */
+    padding:10px;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image {
+    width: 200px; /* adjust width and height to your liking */
+    height: 200px;
+    border-radius: 70%; /* set border radius to 50% to create a circle */
+    overflow: hidden; /* hide any content outside of the container */
+    align-self: flex-start;
+}
+  
+.about-image img {
+    display: block;
+    width: 100%; /* make sure the image fills the container */
+    height: auto;
+    object-fit: cover; /* crop the image to fill the container */
+}
+
+/* Contact */
+#contact{
+    margin-top:20px;
+}
+
+#contact .box{
+    float:left;
+    text-align: center;
+    width:20%;
+    padding:10px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    padding: 20px;
+    margin-top:20px;
+    color:#000000;
+    text-align:center;
+}
+
